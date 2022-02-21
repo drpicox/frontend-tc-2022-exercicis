@@ -1,0 +1,15 @@
+.Graella {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.Graella img {
+  width: 30%;
+  cursor: pointer;
+}
+
+.Graella-zoom img {
+  width: 100%;
+  cursor: pointer;
+}
