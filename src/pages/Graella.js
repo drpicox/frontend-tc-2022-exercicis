@@ -3,12 +3,14 @@ import { useState } from "react";
 import "./Graella.css";
 
 const fotos = [
-  "https://www.fillmurray.com/400/300",
-  "https://www.fillmurray.com/440/330",
-  "https://www.fillmurray.com/480/360",
-  "https://www.fillmurray.com/520/390",
-  "https://www.fillmurray.com/560/420",
-];
+  "/graella/pic0.jpg",
+  "/graella/pic1.jpg",
+  "/graella/pic2.jpg",
+  "/graella/pic3.jpg",
+  "/graella/pic4.jpg",
+  "/graella/pic5.jpg",
+].map((f) => process.env.PUBLIC_URL + f);
+console.log(fotos);
 
 export default function Graella() {
   const [gran, setGran] = useState(false);
