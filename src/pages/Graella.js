@@ -10,7 +10,6 @@ const fotos = [
   "/graella/pic4.jpg",
   "/graella/pic5.jpg",
 ].map((f) => process.env.PUBLIC_URL + f);
-console.log(fotos);
 
 export default function Graella() {
   const [gran, setGran] = useState(false);

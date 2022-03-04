@@ -1,0 +1,22 @@
+.TicToe-board {
+  display: flex;
+}
+
+.TicToe-casella {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0;
+  border: none;
+  border-right: solid 1px black;
+}
+.TicToe-casella:last-child {
+  border-right: none;
+}
+.TicToe-casella:hover {
+  background: palegoldenrod;
+  cursor: pointer;
+}
+
+.TicToe-casella--winner {
+  background: palegreen;
+}
