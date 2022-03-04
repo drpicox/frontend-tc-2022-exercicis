@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/frontend-tc-2022-exercicis/static/css/main.9a4abd77.css",
-    "main.js": "/frontend-tc-2022-exercicis/static/js/main.1d91b6f6.js",
+    "main.js": "/frontend-tc-2022-exercicis/static/js/main.e56782ed.js",
     "static/js/787.1031ca89.chunk.js": "/frontend-tc-2022-exercicis/static/js/787.1031ca89.chunk.js",
     "index.html": "/frontend-tc-2022-exercicis/index.html",
     "main.9a4abd77.css.map": "/frontend-tc-2022-exercicis/static/css/main.9a4abd77.css.map",
-    "main.1d91b6f6.js.map": "/frontend-tc-2022-exercicis/static/js/main.1d91b6f6.js.map",
+    "main.e56782ed.js.map": "/frontend-tc-2022-exercicis/static/js/main.e56782ed.js.map",
     "787.1031ca89.chunk.js.map": "/frontend-tc-2022-exercicis/static/js/787.1031ca89.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a4abd77.css",
-    "static/js/main.1d91b6f6.js"
+    "static/js/main.e56782ed.js"
   ]
 }
