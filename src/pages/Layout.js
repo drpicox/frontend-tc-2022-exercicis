@@ -5,23 +5,23 @@ export default function Layout() {
   return (
     <>
       <header>Exercicis React</header>
-      <div class="HolyGrail-body">
-        <main class="HolyGrail-content">
+      <div className="HolyGrail-body">
+        <main className="HolyGrail-content">
           <Outlet />
         </main>
-        <nav class="HolyGrail-nav">
+        <nav className="HolyGrail-nav">
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             {llista.map((item) => (
-              <li>
+              <li key={item.path}>
                 <Link to={item.path}>{item.titol}</Link>
               </li>
             ))}
           </ul>
         </nav>
-        <aside class="HolyGrail-ads">…</aside>
+        <aside className="HolyGrail-ads">…</aside>
       </div>
       <footer>by David Rodenas</footer>
     </>
