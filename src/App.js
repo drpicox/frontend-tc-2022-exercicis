@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -9,7 +9,7 @@ import { store } from "./store";
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
@@ -18,7 +18,7 @@ function App() {
             ))}
           </Route>
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   );
 }
