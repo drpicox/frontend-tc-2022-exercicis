@@ -1,2 +1,2 @@
 export * from "./TicToe";
-export * from "./ticToeRedux";
+export * from "./reducers";

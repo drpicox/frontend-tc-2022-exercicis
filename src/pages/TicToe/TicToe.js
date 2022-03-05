@@ -1,20 +1,20 @@
 import {
-  getTaulell,
-  juga,
-  reinicia,
-  getHiHaGuanyador,
-  getCasellesGuanyadores,
-  getFiDePartida,
-} from "./ticToeRedux";
+  selectTaulell,
+  selectHiHaGuanyador,
+  selectCasellesGuanyadores,
+  selectFiDePartida,
+} from "./selectors";
+import { juga, reinicia } from "./actions";
+
 import "./TicToe.css";
 import { useDispatch, useSelector } from "react-redux";
 
 export function TicToe() {
   const dispatch = useDispatch();
-  const taulell = useSelector(getTaulell);
-  const hiHaGuanyador = useSelector(getHiHaGuanyador);
-  const casellesGuanyadores = useSelector(getCasellesGuanyadores) ?? [];
-  const fiDePartida = useSelector(getFiDePartida);
+  const taulell = useSelector(selectTaulell);
+  const hiHaGuanyador = useSelector(selectHiHaGuanyador);
+  const casellesGuanyadores = useSelector(selectCasellesGuanyadores) ?? [];
+  const fiDePartida = useSelector(selectFiDePartida);
   const [casellaGuanyadoraA] = casellesGuanyadores;
 
   return (
